@@ -1,7 +1,6 @@
-function delay(time){
-  return new Promise((resolve, reject) => {
+const delay = time =>
+  new Promise(resolve => {
     setTimeout(resolve, time);
   });
-}
 
-delay(1000).then(()=>console.log("done"));
+delay(1000).then(() => console.log("done"));
